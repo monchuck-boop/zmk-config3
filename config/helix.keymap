@@ -50,11 +50,11 @@ As such, those are in use within the default layer at this time.*/
             // |      |      |      |      |      |      |      |                    |      |      |      |      |      |      |      |
 
             bindings = <
-&kp ESC       &kp COLON &kp RBKT  &kp RPAR  &kp GT    &kp RBRC                           &trans     &trans     &trans     &trans    &trans    &trans
-&kp LANG1     &kp J     &kp M     &kp B     &kp SQT   &kp TAB                        &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
-&kp DOT       &kp V     &kp C     &kp L     &kp Z     &kp Q                           &trans     &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
-&trans        &trans    &trans    &kp COMMA    &kp LPAR    &kp RPAR  &trans     &trans     &trans     &kp HOME  &kp END   &trans
-&trans     &trans    &trans  &trans    &trans    &trans     &trans      &trans    &trans     &trans     &trans     &trans    &trans    &trans
+&kp ESC    &kp COLON  &kp RBKT  &kp RPAR  &kp GT     &kp RBRC                     &trans     &trans     &trans     &trans    &trans    &trans
+&kp LANG1  &kp J      &kp M     &kp B     &kp SQT    &kp TAB                      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
+&kp DOT    &kp V      &kp C     &kp L     &kp Z      &kp Q                        &trans     &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
+&trans     &kp X      &kp G     &kp W     &kp MINUS  &kp DEL   &kp ESC    &trans  &trans     &kp HOME   &kp END    &trans    &trans    &trans
+&trans     &trans     &trans    &trans    &trans     &trans    &trans     &trans  &trans     &trans     &trans     &trans
             >;
         };
 
@@ -67,11 +67,11 @@ As such, those are in use within the default layer at this time.*/
             // |       |       |       |       |       |       |       |                    |       |       |       | NEXT  | VOL-  | VOL+  | PLAY  |
 
             bindings = <
-&trans     &trans  &trans  &trans  &trans   &trans                     &trans   &trans     &trans      &trans        &trans        &trans
-&kp GRAVE  &kp N1  &kp N2  &kp N3  &kp N4   &kp N5                     &kp N6   &kp N7     &kp N8      &kp N9        &kp N0        &kp DEL
-&trans     &kp F1  &kp F2  &kp F3  &kp F4   &kp F5                     &kp F6   &kp MINUS  &kp EQUAL   &kp LBKT      &kp RBKT      &kp BSLH
-&trans     &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &trans    &trans  &kp F12  &trans     &kp PSCRN   &kp PG_DN     &kp PG_UP     &trans
-&trans     &trans  &trans  &trans  &trans   &trans   &trans    &trans  &trans   &trans     &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
+&trans          &trans        &trans        &kp HOME      &kp END       &trans                            &trans   &trans     &trans      &trans        &trans        &trans
+&kp GRAVE       &kp ASTERISK  &kp N7        &kp N8        &kp N9        &kp MINUS                         &kp N6   &kp N7     &kp N8      &kp N9        &kp N0        &kp DEL
+&trans          &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp PLUS                          &kp F6   &kp MINUS  &kp EQUAL   &kp LBKT      &kp RBKT      &kp BSLH
+&kp KP_NUMLOCK  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(LC(F1))  &trans    &trans  &kp F12  &trans     &kp PSCRN   &kp PG_DN     &kp PG_UP     &trans
+&trans          &trans        &kp N0        &kp COMMA     &kp PERIOD    &trans          &trans    &trans  &trans   &trans     &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
             >;
         };
 
@@ -84,15 +84,25 @@ As such, those are in use within the default layer at this time.*/
             // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
 
             bindings = <
-&kp GRAVE   &kp EXCL      &kp AT        &kp HASH      &kp DLLR      &kp PRCNT                           &kp CARET        &kp AMPS         &kp ASTRK        &kp LPAR         &kp RPAR         &ext_power EP_TOG
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                        &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
-&bt BT_NXT  &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &trans        &trans                              &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &trans
-&bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans           &trans           &trans           &trans           &trans           &trans
-&trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans           &trans           &trans           &trans           &trans           &trans
+&kp INSERT  &kp EXCL              &trans           &kp PAGE_UP      &kp PG_DN        &kp CARET                            &kp CARET        &kp AMPS         &kp ASTRK        &kp LPAR         &kp RPAR         &ext_power EP_TOG
+&trans      &kp NON_US_BACKSLASH  &kp HASH         &kp EQUAL        &kp QUESTION     &kp PERCENT                          &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
+&bt BT_NXT  &out OUT_TOG          &kp UP_ARROW     &kp AT_SIGN      &kp EXCLAMATION  &kp PIPE                             &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &trans
+&kp CAPS    &kp LEFT_ARROW        &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp UNDERSCORE   &kp AMPERSAND  &kp LBRC    &kp RBRC  &trans           &trans           &trans           &trans           &trans           &trans
+&trans      &trans                &kp PRINTSCREEN  &trans           &kp TILDE        &trans         &trans      &trans    &trans           &trans           &trans           &trans           &trans           &trans
             >;
         };
 
         layer_4 {
+            bindings = <
+&trans  &trans  &kp F10  &kp F11  &kp F12  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F7   &kp F8   &kp F9   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F4   &kp F5   &kp F6   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp F1   &kp F2   &kp F3   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans   &trans   &trans   &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+            >;
+        };
+
+        layer_5 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
