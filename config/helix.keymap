@@ -33,11 +33,11 @@ As such, those are in use within the default layer at this time.*/
             // | ADJUST |  ESC   |  ALT   |  LGUI  | EISUU  | LOWER  | SPACE  |                    |  SPACE | RAISE  |  KANA  |  LEFT  |  DOWN  |  UP    |  RIGHT |
 
             bindings = <
-&kp LC(Z)         &kp SEMI  &kp LBKT  &kp LPAR  &kp LT   &kp LBRC                          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     &kp DEL
-&kp LANG2         &kp P     &kp K     &kp R     &kp A    &kp F                             &kp Y      &kp U      &kp I      &kp O       &kp P      &kp BSPC
-&kp BSPC          &kp D     &kp T     &kp H     &kp E    &kp O                             &kp H      &kp J      &kp K      &kp L       &kp SEMI   &kp SQT
-&kp LEFT_SHIFT    &kp Y     &kp S     &kp N     &kp I    &kp U     &kp SPACE    &kp RBKT   &kp N      &kp M      &kp COMMA  &kp PERIOD  &kp SLASH  &kp RET
-&kp LEFT_CONTROL  &kp LALT  &kp LGUI  &mo SYM   &mo NUM  &mo 1     &kp RET      &kp SPACE  &mo RAISE  &kp LANG1  &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT
+&kp LC(Z)         &kp SEMI  &kp LBKT  &kp LPAR  &kp LT  &kp LBRC                          &kp N6     &kp N7     &kp N8     &kp N9      &kp N0     &kp DEL
+&kp LANG2         &kp P     &kp K     &kp R     &kp A   &kp F                             &kp Y      &kp U      &kp I      &kp O       &kp P      &kp BSPC
+&kp BSPC          &kp D     &kp T     &kp H     &kp E   &kp O                             &kp H      &kp J      &kp K      &kp L       &kp SEMI   &kp SQT
+&kp LEFT_SHIFT    &kp Y     &kp S     &kp N     &kp I   &kp U     &kp SPACE    &kp RBKT   &kp N      &kp M      &kp COMMA  &kp PERIOD  &kp SLASH  &kp RET
+&kp LEFT_CONTROL  &kp LALT  &kp LGUI  &mo 3     &mo 2   &mo 1     &kp RET      &kp SPACE  &mo RAISE  &kp LANG1  &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT
             >;
         };
 
@@ -89,6 +89,16 @@ As such, those are in use within the default layer at this time.*/
 &bt BT_NXT  &out OUT_TOG  &out OUT_USB  &out OUT_BLE  &trans        &trans                              &rgb_ug RGB_EFR  &rgb_ug RGB_HUD  &rgb_ug RGB_SAD  &rgb_ug RGB_SPD  &rgb_ug RGB_BRD  &trans
 &bt BT_PRV  &trans        &trans        &trans        &trans        &trans        &kp LBRC    &kp RBRC  &trans           &trans           &trans           &trans           &trans           &trans
 &trans      &trans        &trans        &trans        &trans        &trans        &trans      &trans    &trans           &trans           &trans           &trans           &trans           &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
