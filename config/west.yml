@@ -1,12 +1,13 @@
 manifest:
   defaults:
-    revision: main  # v0.3 から main に変更
+    revision: main
   remotes:
     - name: zmkfirmware
-      url-base: https://github.com/zmkfirmware
+      url-base: https://github.com
   projects:
     - name: zmk
       remote: zmkfirmware
-      import: app/west.yml
+      revision: main
+      import: app/west.yml # ここはこのままでOK
   self:
     path: config
