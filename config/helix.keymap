@@ -24,6 +24,9 @@
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
 
+
+#include <dt-bindings/zmk/keys.h>
+#include <locale/keys_ja.h> // 日本語配列用ヘッダー
 /*
  * Copyright (c) 2020 The ZMK Contributors
  *
