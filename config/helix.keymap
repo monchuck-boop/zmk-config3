@@ -101,23 +101,23 @@ As such, those are in use within the default layer at this time.*/
         num_layer {
             //* NUM
             // * ,-----------------------------------------.             ,-----------------------------------------.
-            // * |RGBRST|   |      |  HOME |  END |   TAB     |             |      |      |      |      |      |      |
+            // * |　　　|     |       |  HOME |  END |TAB   |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-            // * | RGB1 | *   |   7   |   8  |  9  |   -   |             |      |      |      |      |      |      |
+            // * | 　　 | *   |   9   |   8  |  7  |   -   |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-            // * | RGB2 |   / |   4  |   5  |   6  |   +   |             |      |      |      |      |      |      |
+            // * |      |   / |   6 |   5  |   4  |   +   |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-            // * | RGB3 |    0 |   1  |   2  |   3  |      |      |      |      |      |      |      |      |      |
+            // * |      |      |   3  |   2  |   1  |  0    |      |      |      |      |      |      |      |      |
             // * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-            // * |RGBOFF|      |   0  |   .   |  ,  |      |      |      |      |      |      |      |      |      |
+            // * |      |      |   ,  |   .   |  0  |      |      |      |      |      |      |      |      |      |
             // * `-------------------------------------------------------------------------------------------------'
 
             bindings = <
-&trans          &trans        &trans        &kp HOME      &kp END       &kp TAB                            &trans   &trans     &trans      &trans        &trans        &trans
-&kp GRAVE       &kp JP_ASTERISK  &kp N7        &kp N8        &kp N9        &kp MINUS                         &kp N6   &kp N7     &kp N8      &kp N9        &kp N0        &kp DEL
-&trans          &kp SLASH     &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp JP_PLUS                          &kp F6   &kp MINUS  &kp EQUAL   &kp LBKT      &kp RBKT      &kp BSLH
-&kp KP_NUMLOCK  &kp N0        &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LS(LC(F1))  &trans    &trans  &kp F12  &trans     &kp PSCRN   &kp PG_DN     &kp PG_UP     &trans
-&trans          &trans        &kp N0        &kp COMMA     &kp PERIOD    &trans          &trans    &trans  &trans   &trans     &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
+&trans          &trans           &trans        &kp HOME      &kp END       &kp TAB                            &trans   &trans     &trans      &trans        &trans        &trans
+&kp GRAVE       &kp JP_ASTERISK  &kp N9        &kp N8        &kp N7        &kp MINUS                         &kp N6   &kp N7     &kp N8      &kp N9        &kp N0        &kp DEL
+&trans          &kp SLASH        &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp JP_PLUS                          &kp F6   &kp MINUS  &kp EQUAL   &kp LBKT      &kp RBKT      &kp BSLH
+&kp KP_NUMLOCK  &kp LS(LC(F1))   &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp N0       &trans    &trans  &trans   &trans     &kp PSCRN   &kp PG_DN     &kp PG_UP     &trans
+&trans          &trans           &kp PERIOD    &kp COMMA     &kp N    0    &trans       &trans    &trans  &trans   &trans     &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
             >;
         };
 
