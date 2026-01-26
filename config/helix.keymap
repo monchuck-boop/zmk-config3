@@ -90,7 +90,7 @@ As such, those are in use within the default layer at this time.*/
             // * `-------------------------------------------------------------------------------------------------'         
 
             bindings = <
-&kp ESC    &kp SINGLE_QUOTE  &kp RBKT  &kp RPAR  &kp GT     &kp RBRC                     &trans     &trans     &trans     &trans    &trans    &trans
+&kp ESC    &kp SINGLE_QUOTE  &kp JP_LBRACKET  &kp JP_RPAREN  &kp GT     &kp JP_RBRACE                &trans     &trans     &trans     &trans    &trans    &trans
 &kp LANG1  &kp J             &kp M     &kp B     &kp SQT    &kp TAB                      &kp CARET  &kp AMPS   &kp ASTRK  &kp LPAR  &kp RPAR  &trans
 &kp DOT    &kp V             &kp C     &kp L     &kp Z      &kp Q                        &trans     &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
 &trans     &kp X             &kp G     &kp W     &kp MINUS  &kp DEL   &kp ESC    &trans  &trans     &kp HOME   &kp END    &trans    &trans    &trans
@@ -122,13 +122,17 @@ As such, those are in use within the default layer at this time.*/
         };
 
         sym_layer {
-            // ---------------------------------------------------------------------------------------------------------------------------------
-            // |    `     |    !     |    @     |    #     |    $     |    %     |                                          |    ^     |    &     |    *     |    (     |    )     |  EP TOG  |
-            // |  BT CLR  | BT SEL0  | BT SEL1  | BT SEL2  | BGT SEL3 | BT SEL4  |                                          | RGB EFF+ | RGB HUE+ | RGB SAT+ | RGB SPD+ | RGB BRI+ | RGB TOG  |
-            // |  BT NXT  | OUT TOG  | OUT USB  | OUT BLE  |          |          |                                          | RGB EFF- | RGB HUE- | RGB SAT- | RGB SPD- | RGB BRI- |          |
-            // |  BT PRV  |          |          |          |          |          |    {     |                    |    }     |          |          |          |          |          |          |
-            // |          |          |          |          |          |          |          |                    |          |          |          |          |          |          |          |
-
+// ,-----------------------------------------.
+// |  Ins |  GRV |      |  PU  |  PD  |   ^  |
+// |------+------+------+------+------+------|
+// |      |   \  |   #  |   =  |   ?  |   %  |
+// |------+------+------+------+------+------|
+// |      |   $  |   ↑  |   @  |   !  |   |  |
+// |------+------+------+------+------+------+------.
+// |  CL  |  <-  |   ↓  |  ->  |   _  |   &  |      |
+// |------+------+------+------+------+------+------|
+// |      |      |  PS  |      |   ~  |      |      |
+//  `-----------------------------------------------'            
             bindings = <
 &kp INSERT  &kp EXCL              &trans           &kp PAGE_UP      &kp PG_DN        &kp CARET                            &kp CARET        &kp AMPS         &kp ASTRK        &kp LPAR         &kp RPAR         &ext_power EP_TOG
 &trans      &kp NON_US_BACKSLASH  &kp HASH         &kp EQUAL        &kp QUESTION     &kp PERCENT                          &rgb_ug RGB_EFF  &rgb_ug RGB_HUI  &rgb_ug RGB_SAI  &rgb_ug RGB_SPI  &rgb_ug RGB_BRI  &rgb_ug RGB_TOG
