@@ -114,8 +114,8 @@ As such, those are in use within the default layer at this time.*/
 
             bindings = <
 &trans          &trans           &trans        &kp HOME      &kp END       &kp TAB                            &trans   &trans     &trans      &trans        &trans        &trans
-&kp GRAVE       &kp JP_ASTERISK  &kp N9        &kp N8        &kp N7        &kp MINUS                         &kp N6   &kp N7     &kp N8      &kp N9        &kp N0        &kp DEL
-&trans          &kp SLASH        &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp JP_PLUS                          &kp F6   &kp MINUS  &kp EQUAL   &kp LBKT      &kp RBKT      &kp BSLH
+&kp BT_SEL 1       &kp JP_ASTERISK  &kp N9        &kp N8        &kp N7        &kp MINUS                         &kp N6   &kp N7     &kp N8      &kp N9        &kp N0        &kp DEL
+&kp BT_SEL 2          &kp SLASH        &kp NUMBER_6  &kp N5        &kp NUMBER_4  &kp JP_PLUS                          &kp F6   &kp MINUS  &kp EQUAL   &kp LBKT      &kp RBKT      &kp BSLH
 &kp KP_NUMLOCK  &kp LS(LC(F1))   &kp NUMBER_3  &kp NUMBER_2  &kp NUMBER_1  &kp N0       &trans    &trans  &trans   &trans     &kp PSCRN   &kp PG_DN     &kp PG_UP     &trans
 &trans          &trans           &kp PERIOD    &kp COMMA     &kp N    0    &trans       &trans    &trans  &trans   &trans     &kp C_NEXT  &kp C_VOL_DN  &kp C_VOL_UP  &kp C_PP
             >;
