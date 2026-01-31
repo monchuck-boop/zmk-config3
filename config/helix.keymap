@@ -23,6 +23,7 @@
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
 #define JP_HANZEN       GRAVE             // 半角/全角
+#define JP_CAPS         LS(JP_EISU)       // Caps Lock
 
 //#include <locale/keys_ja.h> // 日本語配列用ヘッダー
 
@@ -82,9 +83,9 @@ As such, those are in use within the default layer at this time.*/
             // * |------+------+------+------+------+------|             |------+------+------+------+------+------|
             // * |  EISU|   J  |   M  |   B  |   '  |  Tab |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-            // * |   .  |   V  |   C  |   L  |   Z  |  Q   |             |      |      |      |      |      |      |
+            // * |   BS  |   V  |   C  |   L  |   Z  |  Q   |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-            // * |      |   X  |   G  |   W  |   -  |  Del | Esc  |      |      |      |      |      |      |      |
+            // * |  CAPS|   X  |   G  |   W  |   -  |  Del | Esc  |      |      |      |      |      |      |      |
             // * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
             // * |      |      |      |   ,  | DTOP |      |      |      |      |      |      |      |      |      |
             // * `-------------------------------------------------------------------------------------------------'         
@@ -92,9 +93,9 @@ As such, those are in use within the default layer at this time.*/
             bindings = <
 &kp ESC      &kp SINGLE_QUOTE  &kp JP_RBRACKET     &kp JP_RPAREN  &kp GT         &kp JP_RBRACE                        &trans     &trans    &trans   &trans     &trans     &trans
 &kp JP_EISU  &kp J             &kp M               &kp B          &kp JP_QUOTE   &kp TAB                              &trans     &trans    &trans   &trans     &trans     &trans
-&kp DOT      &kp V             &kp C               &kp L          &kp Z          &kp Q                                &trans     &trans    &trans   &trans     &trans     &trans
-&trans       &kp X             &kp G               &kp W          &kp MINUS      &kp DEL          &kp ESC    &trans   &trans     &trans    &trans   &trans     &trans     &trans
-&trans       &trans            &trans              &trans         &trans         &trans           &trans     &trans   &trans     &trans     &trans   &trans     &trans     &trans
+&kp DEL      &kp V             &kp C               &kp L          &kp Z          &kp Q                                &trans     &trans    &trans   &trans     &trans     &trans
+&KP JP_CAPS  &kp X             &kp G               &kp W          &kp MINUS      &kp DEL          &kp ESC    &trans   &trans     &trans    &trans   &trans     &trans     &trans
+&kp DOT       &trans            &trans              &trans         &trans         &trans           &trans     &trans   &trans     &trans     &trans   &trans     &trans     &trans
             >;
         };
 
