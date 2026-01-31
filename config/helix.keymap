@@ -94,7 +94,7 @@ As such, those are in use within the default layer at this time.*/
 &kp ESC      &kp SINGLE_QUOTE  &kp JP_RBRACKET     &kp JP_RPAREN  &kp GT         &kp JP_RBRACE                        &trans     &trans    &trans   &trans     &trans     &trans
 &kp JP_EISU  &kp J             &kp M               &kp B          &kp JP_QUOTE   &kp TAB                              &trans     &trans    &trans   &trans     &trans     &trans
 &kp DEL      &kp V             &kp C               &kp L          &kp Z          &kp Q                                &trans     &trans    &trans   &trans     &trans     &trans
-&KP JP_CAPS  &kp X             &kp G               &kp W          &kp MINUS      &kp DEL          &kp ESC    &trans   &trans     &trans    &trans   &trans     &trans     &trans
+&kp JP_CAPS  &kp X             &kp G               &kp W          &kp MINUS      &kp DEL          &kp ESC    &trans   &trans     &trans    &trans   &trans     &trans     &trans
 &kp DOT       &trans            &trans              &trans         &trans         &trans           &trans     &trans   &trans     &trans     &trans   &trans     &trans     &trans
             >;
         };
