@@ -131,14 +131,14 @@ As such, those are in use within the default layer at this time.*/
 // |------+------+------+------+------+------+------.
 // |  CL  |  <-  |   ↓  |  ->  |   _  |   &  |      |
 // |------+------+------+------+------+------+------|
-// |      |      |  PS  |      |   ~  |      | ￥     |
+// |      |      |  PS  |      |   ~  |  ￥  |      |
 //  `-----------------------------------------------'            
             bindings = <
 &kp INSERT  &kp EXCL              &trans           &kp PAGE_UP      &kp PG_DN        &kp JP_CARET                            &trans   &trans     &trans   &trans    &trans   &trans
 &trans      &kp NON_US_BACKSLASH  &kp HASH         &kp JP_EQUAL     &kp QUESTION     &kp PERCENT                             &trans   &trans     &trans   &trans    &trans   &trans
 &bt BT_NXT  &out OUT_TOG          &kp UP_ARROW     &kp AT_SIGN      &kp EXCLAMATION  &kp PIPE                                &trans   &trans     &trans   &trans    &trans   &trans
 &kp CAPS    &kp LEFT_ARROW        &kp DOWN_ARROW   &kp RIGHT_ARROW  &kp UNDERSCORE   &kp JP_AMPERSAND  &kp LBRC     &trans   &trans   &trans     &trans   &trans    &trans   &trans
-&trans      &trans                &kp PRINTSCREEN  &trans           &kp TILDE        &trans            &kp JP_YEN   &trans   &trans   &trans     &trans   &trans    &trans   &trans
+&trans      &trans                &kp PRINTSCREEN  &trans           &kp TILDE         &kp JP_YEN        &trans     &trans   &trans   &trans     &trans   &trans    &trans   &trans
             >;
         };
 
@@ -147,15 +147,15 @@ As such, those are in use within the default layer at this time.*/
 
             //* Func
             // * ,-----------------------------------------.             ,-----------------------------------------.
-            // * |RGBRST|  Hue |      |  RST |  Mac |  Win |             |      |      |      |      |      |      |
+            // * |BT_CLR|  　　| F10 　| F11  | F12  |     |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-            // * | RGB1 | VAL+ |  F7  |  F8  |  F9  |      |             |      |      |      |      |      |      |
+            // * |BT BS0 |　　　|  F7  |  F8  |  F9  |     |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-            // * | RGB2 | VAL- |  F4  |  F5  |  F6  | F12  |             |      |      |      |      |      |      |
+            // * |      | 　　　|  F4  |  F5  |  F6  |     |             |      |      |      |      |      |      |
             // * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-            // * | RGB3 |  F10 |  F1  |  F2  |  F3  | F11  |      |      |      |      |      |      |      |      |
+            // * |      |       |  F1 |  F2  |  F3  | 　　　|      |      |      |      |      |      |      |      |
             // * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-            // * |RGBOFF|      |      |      |      |      |      |      |      |      |      |      |      |      |
+            // * |      |      |      |      |      |      |      |      |      |      |      |      |      |      |
             // * `-------------------------------------------------------------------------------------------------'
 &bt BT_CLR     &trans  &kp F10  &kp F11  &kp F12  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_DISC 0  &trans  &kp F7   &kp F8   &kp F9   &trans                    &trans  &trans  &trans  &trans  &trans  &trans
