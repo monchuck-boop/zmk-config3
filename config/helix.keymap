@@ -138,7 +138,7 @@ As such, those are in use within the default layer at this time.*/
 &kp INSERT  &kp EXCL              &trans           &kp PAGE_UP      &kp PG_DN        &kp JP_CARET                            &trans   &trans     &trans   &trans    &trans   &trans
 &trans      &kp NON_US_BACKSLASH  &kp HASH         &kp JP_EQUAL     &kp QUESTION     &kp PERCENT                             &trans   &trans     &trans   &trans    &trans   &trans
 &bt BT_NXT  &out OUT_TOG          &kp UP_ARROW     &kp AT_SIGN      &kp EXCLAMATION  &kp PIPE                                &trans   &trans     &trans   &trans    &trans   &trans
-&kp CAPS    &kp RIGHT_ARROW       &kp DOWN_ARROW 　 &kp LEFT_ARROW  &kp UNDERSCORE   &kp JP_AMPERSAND  &kp LBRC     &trans   &trans   &trans     &trans   &trans    &trans   &trans
+&kp CAPS    &kp RIGHT_ARROW       &kp DOWN_ARROW   &kp LEFT_ARROW  &kp UNDERSCORE   &kp JP_AMPERSAND  &kp LBRC     &trans   &trans   &trans     &trans   &trans    &trans   &trans
 &trans      &trans                &kp PRINTSCREEN  &trans           &kp TILDE         &kp JP_YEN        &trans     &trans   &trans   &trans     &trans   &trans    &trans   &trans
             >;
         };
