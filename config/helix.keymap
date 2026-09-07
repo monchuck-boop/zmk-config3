@@ -22,7 +22,7 @@
 #define JP_RBRACE       PIPE              // }
 #define JP_KANA         LANGUAGE_1        // かな
 #define JP_EISU         LANGUAGE_2        // 英数
-#define JP_HANZEN       GRAVE             // 半角/全角
+#define JP_HANZEN       GRAVE             // 半角/ 全角
 #define JP_CAPS         LS(JP_EISU)       // Caps Lock
 
 //#include <locale/keys_ja.h> // 日本語配列用ヘッダー
