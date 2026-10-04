@@ -58,20 +58,20 @@ As such, those are in use within the default layer at this time.*/
             //   * ,-----------------------------------------.             ,-----------------------------------------.
             //   * |  C+z |   ;  |   [  |   (  |   <  |   {  |             |      |      |      |      |      |      |
             //   * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-            //   * | KANA |   P  |   K  |   R  |   A  |   F  |             |      |      |      |      |      |      |
+            //   * | KANA |   P  |   R  |   K  |   A  |   F  |             |      |      |      |      |      |      |
             //   * |------+------+------+------+------+------|             |------+------+------+------+------+------|
-            //   * |  BS  |   D  |   T  |   H  |   E  |   O  |             |      |      |      |      |      |      |
+            //   * |  BS  |   D  |   T  |   S  |   I  |   E  |             |      |      |      |      |      |      |
             //   * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
-            //   * | Shift|   Y  |   S  |   N  |   I  |   U  |Space |      |      |      |      |      |      |      |
+            //   * | Shift|   Y  |   H  |   N  |   U  |   O  |Space |      |      |      |      |      |      |      |
             //   * |------+------+------+------+------+------+------+------+------+------+------+------+------+------|
             //   * | Ctrl | Alt  | Gui  | Sym  | Num  | OPT  | Ent  |      |      |      |      |      |      |      |
             //   * `-------------------------------------------------------------------------------------------------'
 
             bindings = <
 &kp LC(Z)         &kp SEMI  &kp JP_LBRACKET  &kp JP_LPAREN  &kp LT  &kp JP_LBRACE       &trans     &trans    &trans   &trans     &trans     &trans
-&kp JP_HANZEN     &kp P     &kp K     &kp R     &kp A   &kp F                           &trans     &trans    &trans   &trans     &trans     &trans
-&kp BSPC          &kp D     &kp T     &kp H     &kp E   &kp O                           &trans     &trans    &trans   &trans     &trans     &trans
-&sk LSHIFT    &kp Y     &kp S     &kp N     &kp I   &kp U     &kp SPACE     &trans  &trans     &trans    &trans   &trans     &trans     &trans
+&kp JP_HANZEN     &kp P     &kp R     &kp K     &kp A   &kp F                           &trans     &trans    &trans   &trans     &trans     &trans
+&kp BSPC          &kp D     &kp T     &kp S     &kp I   &kp E                           &trans     &trans    &trans   &trans     &trans     &trans
+&sk LSHIFT    &kp Y     &kp H     &kp N     &kp U   &kp O     &kp SPACE     &trans  &trans     &trans    &trans   &trans     &trans     &trans
 &kp LCTRL     &kp LALT  &mo 4     &mo 3     &mo 2   &mo 1     &kp RET      &trans   &trans     &trans    &trans   &trans     &trans     &trans
             >;
         };
